@@ -23,6 +23,7 @@ class MovieSerializer(serializers.Serializer):
 
         return instance
 
+
 class ActorSerializer(serializers.Serializer):
     id = serializers.IntegerField(read_only=True)
     first_name = serializers.CharField(max_length=100)
